@@ -569,7 +569,7 @@ hr { border: none; border-top: 1px solid var(--neutral-20); margin: 2rem 0; }
 
       try {
         const response = await fetch(`/api/webhooks/callback/${executionId}`, {
-          method: 'PUT',
+          method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload)
         });
